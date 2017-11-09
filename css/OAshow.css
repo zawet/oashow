@@ -1,0 +1,123 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+body {position: absolute; width: 100%;min-height: 100%;left: 0;top: 0;background: #f1f0f6;}
+.os-box{height: 100%;width: 100%;position: absolute !important;color: #fff !important;}
+
+.swiper-slide{background: no-repeat 0 0; background-size: 100% 100%; overflow: hidden;}
+.swiper-slide#index{ background-image: url("../images/index/indexbg.png") ;}
+.swiper-slide#list{ background-image: url("../images/list/bg.png") ;}
+.swiper-slide#end{ background-image: url("../images/end/bg.png") ;}
+.swiper-slide.sig{ background-image: url("../images/sigbg.png") ;}
+
+
+.os-min{ max-width: 100%;}
+.os-min img{  display: block; margin: 0 auto;}
+
+
+/*首页样式*/
+.title1 img{width:34.5%;}
+.title2 img{width:58.4%;}
+.title3 img{width:50.3%;}
+.mainpng img{width:84.5%; margin-left:10%;}
+
+.title1{margin: 10% 0 5%;}
+.title2{margin: 5% 0;}
+.mainpng{margin: 10% 0 5%; position: relative;}
+.huan-line{  position: absolute; z-index: 66; left: 0; top:-12%; width: 98%;}
+.huan-line img{ width: 100%; margin: 0;}
+.huan-line.one{animation: xz 2s linear infinite;}
+.huan-line.jx{animation:jxxz 3s linear infinite;}
+.mo{ position: relative; z-index: 65;}
+
+@keyframes xz
+{
+from {transform:  rotateY(55deg ) rotateX(-49deg ) rotateZ( 0deg ) }
+to {transform:  rotateY(55deg ) rotateX(-49deg ) rotateZ(360deg ) }
+}
+@keyframes jxxz
+{
+from {transform:  rotateY(55deg ) rotateX(65deg ) rotateZ( 0deg ) }
+to {transform:  rotateY(55deg ) rotateX(65deg ) rotateZ(360deg ) }
+}
+
+
+/*列表页*/
+.listtop img{ width: 100%;}
+.listtop{ position: absolute; top:-1%; left: 0; width: 100%;z-index: 3;}
+
+.list-mian{ position:relative; z-index: 66;}
+.list-mian img{ display: inline-block;}
+.list-tit img{ width: 26.13%; margin-top: -1%; }
+.list-one .list-tit img{ margin-left: 8%; margin-top:24%; }
+.list-two .list-tit{ text-align: right;}
+.list-two .list-tit img{ margin-right: 8%;  }
+.list-three .list-tit img{ margin-left: 10%;  }
+
+.list-two .list-sig{ text-align: right;}
+.list-sig img{ margin-top: -1.5%;}
+.list-sig.desk img{ width: 32.2%; margin-left: 13%;}
+.list-sig.desk2 img{ width: 34.6%; margin-left: 24%;}
+.list-sig.commun img{ width: 37.66%;margin-right: 9.3%;}
+.list-sig.commun2 img{ width: 41%;margin-right: 6%;}
+.list-sig.mail img{ width: 34.6%;margin-right: 9.3%;}
+.list-sig.doc img{ width: 35.26%;margin-right: 15%;}
+.list-sig.flow img{ width: 41.53%;margin-right: 26%;}
+.list-sig.office img{ width: 47.93%;margin-left: 15%;}
+
+
+
+/*内容页样式*/
+.backlist{ position: absolute; top: 0; left: 0; width: 100%;}
+.backlist img{ width: 70%;}
+
+
+
+.imgshow{ width:75%;  margin: 10% auto;position: relative;}
+.imgshow .imgshow-bg{ width: 100%;  padding: 2.5% ; box-sizing: border-box;border-radius: 4px;
+    background-image:-webkit-linear-gradient(bottom,rgba(255,255,255,0), rgba(255,255,255,0.3));
+    background-image:linear-gradient(bottom,rgba(255,255,255,0), rgba(255,255,255,0.3)); }
+
+.imgshow .imgs{ width: 100%;border-radius: 4px; display: block; position: relative; z-index: 77;
+-webkit-mask-image: -webkit-linear-gradient(bottom,rgba(255,255,255,0),rgba(255,255,255,0.85), rgba(255,255,255,1));
+}
+
+.imgshow.db .imgshow-bg{ width:80%;}
+.imgshow.db .imgshow-bg:nth-child(2){ margin-left: 20%; margin-top: -28%;}
+
+.imgshow.db2{ width: 100%; margin-top: 14%;}
+
+.imgtxt{ position: relative; z-index: 88; margin-top: -25%;}
+.decktxt img{width: 41%;}
+.rctxt img{width:25%;}
+.txltxt img{width:24.4%;}
+.dxtxt img{width:23.4%;}
+.yjtxt1 img{width:41.7%;}
+.yjtxt2 img{width:38.4%;}
+.gwtxt1 img{width:47.6%;}
+.gwtxt2 img{width:59%;}
+.lctxt1 img{width:59%;}
+.lctxt2 img{width:52.26%;}
+.ydbgtxt img{width:55.4%;}
+
+.ydbgtxt{ position: absolute; bottom:18%; z-index: 202; margin-top: 0; width: 100%;}
+
+/*尾页*/
+.endtitle img{ width: 82%; margin-top: 15%;}
+.endlogo img{ width: 79.6%; margin-top: 10%;}
+.endinfo img{ width: 73.2%; margin-top: 12%}
+
+
+/*统一底部样式*/
+.foot{ position: absolute; bottom:0; left: 0; width: 100%;}
+.foot .qkylogo{ width:12%;}
+.foot .downicon{ width:6%;animation:yd 1.2s linear infinite;}
+.foot img{ margin: 2% auto;}
+
+@keyframes yd
+{
+0%{transform: translateY(0px); }
+50% {transform:  translateY(-6px); }
+100% {transform:  translateY(0px); }
+}

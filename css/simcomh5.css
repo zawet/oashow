@@ -1,0 +1,226 @@
+@charset "utf-8";
+
+/*****************************公用图标字体架构*****************************/
+
+@font-face {
+    font-family: "qky_icon";
+    src: url('../iconfont/qkyicon_font/iconfont.eot');
+    /* IE9*/
+    src: url('../iconfont/qkyicon_font/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../iconfont/qkyicon_font/iconfont.woff') format('woff'), /* chrome, firefox */
+    url('../iconfont/qkyicon_font/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+    url('../iconfont/qkyicon_font/iconfont.svg#iconfont') format('svg');
+    /* iOS 4.1- */
+}
+
+.qkyicon {
+    font-family: "qky_icon" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    /*-webkit-text-stroke-width: 0.2px;*/
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+/*各应用独立图标字体架构*/
+
+@font-face {
+    font-family: "app_icon";
+    src: url('../iconfont/appicon_font/iconfont.eot');
+    /* IE9*/
+    src: url('../iconfont/appicon_font/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../iconfont/appicon_font/iconfont.woff') format('woff'), /* chrome, firefox */
+    url('../iconfont/appicon_font/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+    url('../iconfont/appicon_font/iconfont.svg#iconfont') format('svg');
+    /* iOS 4.1- */
+}
+
+.appicon {
+    font-family: "app_icon" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    /*-webkit-text-stroke-width: 0.2px;*/
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+/*****************************盒子dom（移动端专属）*****************************/
+
+.ub {
+    display: -webkit-box !important;
+    display: box !important;
+    position: relative;
+}
+
+.ub-rev {
+    -webkit-box-direction: reverse;
+    box-direction: reverse;
+}
+
+.ub-fh {
+    width: 100%;
+}
+
+.ub-fv {
+    height: 100%;
+}
+
+.ub-con {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.ub-ac {
+    -webkit-box-align: center;
+    box-align: center;
+}
+
+.ub-ae {
+    -webkit-box-align: end;
+    box-align: end;
+}
+
+.ub-pc {
+    -webkit-box-pack: center;
+    box-pack: center;
+}
+
+.ub-pe {
+    -webkit-box-pack: end;
+    box-pack: end;
+}
+
+.ub-pj {
+    -webkit-box-pack: justify;
+    box-pack: justify;
+}
+
+.ub-ver {
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+}
+
+.ub-f1 {
+    position: relative;
+    -webkit-box-flex: 1;
+    box-flex: 1;
+}
+
+.ub-f2 {
+    position: relative;
+    -webkit-box-flex: 2;
+    box-flex: 2;
+}
+
+.ub-f3 {
+    position: relative;
+    -webkit-box-flex: 3;
+    box-flex: 3;
+}
+
+.ub-f4 {
+    position: relative;
+    -webkit-box-flex: 4;
+    box-flex: 4;
+}
+
+.ub-f5 {
+    position: relative;
+    -webkit-box-flex: 5;
+    box-flex: 5;
+}
+
+.ub-f6 {
+    position: relative;
+    -webkit-box-flex: 6;
+    box-flex: 6;
+}
+
+
+/*****************************基础样式*****************************/
+
+body {
+    font-size: 14px;
+    font-family: Arial, Microsoft YaHei;
+    color: #666666;
+    overflow-x: hidden;
+    width: 100%;
+    -webkit-text-stroke: 1px transparent;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-weight: normal;
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+li,
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img,
+button,
+input,
+select {
+    border: 0px;
+    outline: none;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+i,
+em {
+    font-style: normal;
+}
+
+textarea,
+input {
+    outline: none;
+}
+
+
+/*浮动*/
+
+.fl {
+    float: left!important;
+}
+
+.fr {
+    float: right!important;
+}
+
+
+/*清除浮动*/
+
+.clear:before,
+.clear:after {
+    content: " ";
+    display: table;
+}
+
+.clear:after {
+    clear: both;
+}
