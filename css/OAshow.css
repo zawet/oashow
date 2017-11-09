@@ -2,13 +2,10 @@
 
 /* CSS Document */
 
-body {position: absolute; width: 100%;min-height: 100%;left: 0;top: 0;
-    background-image:-webkit-linear-gradient(bottom,#0a8b70, #3fb778);
-    background-image:linear-gradient(bottom,#0a8b70, #3fb778);
-}
+body {position: absolute; width: 100%;min-height: 100%;left: 0;top: 0; background: #0a8b70;}
 .os-box{height: 100%;width: 100%;position: absolute !important;color: #fff !important;
-    background-image:-webkit-linear-gradient(bottom,#0a8b70, #3fb778);
-    background-image:linear-gradient(bottom,#0a8b70, #3fb778);}
+    background-image:-webkit-linear-gradient(top,#0a8b70, #3fb778);
+    background-image:linear-gradient(top,#0a8b70, #3fb778);}
 
 .swiper-slide{background: no-repeat 0 0; background-size: 100% 100%; overflow: hidden;}
 .swiper-slide#index{ background-image: url("../images/index/indexbg.png") ;}
