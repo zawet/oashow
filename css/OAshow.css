@@ -2,8 +2,8 @@
 
 /* CSS Document */
 
-body {position: absolute; width: 100%;min-height: 100%;left: 0;top: 0;background: #f1f0f6;}
-.os-box{height: 100%;width: 100%;position: absolute !important;color: #fff !important;}
+body {position: absolute; width: 100%;min-height: 100%;left: 0;top: 0;}
+.os-box{height: 100%;width: 100%;position: absolute !important;color: #fff !important;background: url("../images/sigbg.png") no-repeat 0 0; background-size: 100% 100%;}
 
 .swiper-slide{background: no-repeat 0 0; background-size: 100% 100%; overflow: hidden;}
 .swiper-slide#index{ background-image: url("../images/index/indexbg.png") ;}
