@@ -69,7 +69,7 @@ function setupManifest() {
         {src: "images/index/title01.png",id: "title1"},
         {src: "images/index/title02.png",id: "title2"},
         {src: "images/index/title02.png",id: "title3"},
-        {src: "images/index/indexbg.png",id: "indexbg"},
+        {src: "images/sigbg.png",id: "indexbg"},
         {src: "images/index/mian.png",id: "mian"},
         {src: "images/index/huanline.png",id: "huan-line"}
     ];   
@@ -104,7 +104,7 @@ function loadError(evt) {
 function handleFileProgress(event) {
     //console.log( "已加载 " + (preload.progress * 100 | 0) + " %");
     $(".loadprogress .progresszi b").css("width",(preload.progress * 100 | 0) + "%");
-    $(".loadprogress .progresstxt").html((preload.progress * 100 | 0) + " %");
+    $(".loadprogress .progresstxt .bf").html((preload.progress * 100 | 0) + " %");
     
 }
 
