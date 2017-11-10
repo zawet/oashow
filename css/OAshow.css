@@ -4,19 +4,28 @@
 
 body {position: absolute; width: 100%;min-height: 100%;left: 0;top: 0; background: #0a8b70;}
 .os-box{height: 100%;width: 100%;position: absolute !important;color: #fff !important;
-    background-image:-webkit-linear-gradient(top,#0a8b70, #3fb778);
-    background-image:linear-gradient(top,#0a8b70, #3fb778);}
+    background-image:-webkit-linear-gradient(top,#145559, #5eb39a);
+    background-image:linear-gradient(top,#145559, #5eb39a);}
 
 .swiper-slide{background: no-repeat 0 0; background-size: 100% 100%; overflow: hidden;}
-.swiper-slide#index{ background-image: url("../images/index/indexbg.png") ;}
+/* .swiper-slide#index{ background-image: url("../images/index/indexbg.png") ;}
 .swiper-slide#list{ background-image: url("../images/list/bg.png") ;}
 .swiper-slide#end{ background-image: url("../images/end/bg.png") ;}
-.swiper-slide.sig{ background-image: url("../images/sigbg.png") ;}
+.swiper-slide.sig{ background-image: url("../images/sigbg.png") ;} */
 
 
 .os-min{ max-width: 100%;}
 .os-min img{  display: block; margin: 0 auto;}
 
+.loadprogress{ position: fixed; top: 0; left: 0;z-index: 999; width: 100%; height: 100%;
+    background-image:-webkit-linear-gradient(top,#145559, #5eb39a);
+    background-image:linear-gradient(top,#145559, #5eb39a);
+}
+.progress{position: absolute; top: 50%; left: 0;  width: 100%; margin-top: -44px;}
+.progresslogo img{ width: 14%; margin: 0 auto 10px; display: block;}
+.progresszi{ width: 60%; height: 4px; background: rgba(255,255,255,0.6);border-radius: 4px; margin: 0 auto;}
+.progresszi b{ display: block; height: 100%; width: 2%; background: #3fb778;border-radius: 4px; max-width: 100%;}
+.progresstxt{ text-align: center; color: #fff; font-size: 15px; padding: 10px 0;}
 
 /*首页样式*/
 .title1 img{width:34.5%;}
@@ -113,8 +122,8 @@ to {transform:  rotateY(55deg ) rotateX(65deg ) rotateZ(360deg ) }
 
 /*统一底部样式*/
 .foot{ position: absolute; bottom:0; left: 0; width: 100%;}
-.foot .qkylogo{ width:12%;}
-.foot .downicon{ width:6%;animation:yd 1.2s linear infinite;}
+.foot .qkylogo img{ width:12%;}
+.foot .downicon img{ width:6%;animation:yd 1.2s linear infinite;}
 .foot img{ margin: 2% auto;}
 
 @keyframes yd
