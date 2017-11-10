@@ -24,15 +24,15 @@ function toStart(){
     });
 
     $(".backlist").click(function () {
-        st(vl, 2);
+        st(vl, 1);
     });
     $(".list-sig").click(function () {
-        if ($(this).hasClass("desk") || $(this).hasClass("desk2")) st(vl, 3);
-        if ($(this).hasClass("commun") || $(this).hasClass("commun2")) st(vl, 4);
-        if ($(this).hasClass("mail")) st(vl, 5);
-        if ($(this).hasClass("doc")) st(vl, 6);
-        if ($(this).hasClass("flow")) st(vl, 7);
-        if ($(this).hasClass("office")) st(vl, 8);
+        if ($(this).hasClass("desk") || $(this).hasClass("desk2")) st(vl, 2);
+        if ($(this).hasClass("commun") || $(this).hasClass("commun2")) st(vl, 3);
+        if ($(this).hasClass("mail")) st(vl, 4);
+        if ($(this).hasClass("doc")) st(vl, 5);
+        if ($(this).hasClass("flow")) st(vl, 6);
+        if ($(this).hasClass("office")) st(vl, 7);
     });
 
     var mySwiper3 = new Swiper('#swiper-container3', {
@@ -102,9 +102,15 @@ function loadError(evt) {
 
 //已加载完毕进度 
 function handleFileProgress(event) {
+    var p=preload.progress * 100 | 0;
     //console.log( "已加载 " + (preload.progress * 100 | 0) + " %");
-    $(".loadprogress .progresszi b").css("width",(preload.progress * 100 | 0) + "%");
-    $(".loadprogress .progresstxt .bf").html((preload.progress * 100 | 0) + " %");
+    //$(".loadprogress .progresszi b").css("width",p + "%");
+    $(".bf").html(p + "%");
+    if(p<=50){
+         $(".pro.proright b").css("transform","rotateZ("+(p*3.6+225)+"deg)");
+     }else{
+         $(".pro.proleft b").css("transform","rotateZ("+(p*3.6+45)+"deg)");
+    }
     
 }
 
