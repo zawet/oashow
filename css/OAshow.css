@@ -82,7 +82,7 @@ to {transform:  rotateY(55deg ) rotateX(65deg ) rotateZ(360deg ) }
 .list-three .list-tit img{ margin-left: 10%;  }
 
 .list-two .list-sig{ text-align: right;}
-.list-sig img{ margin-top: -1.5%;}
+.list-sig img{ margin-top: -1.6%;}
 .list-sig.desk img{ width: 32.2%; margin-left: 13%;}
 .list-sig.desk2 img{ width: 34.6%; margin-left: 24%;}
 .list-sig.commun img{ width: 37.66%;margin-right: 9.3%;}
@@ -100,7 +100,7 @@ to {transform:  rotateY(55deg ) rotateX(65deg ) rotateZ(360deg ) }
 
 
 
-.imgshow{ width:75%;  margin: 10% auto;position: relative;}
+.imgshow{ width:75%;  margin: 10% auto 5%;position: relative;}
 .imgshow .imgshow-bg{ width: 100%;  padding: 2.5% ; box-sizing: border-box;border-radius: 4px;
     background-image:-webkit-linear-gradient(bottom,rgba(255,255,255,0), rgba(255,255,255,0.3));
     background-image:linear-gradient(bottom,rgba(255,255,255,0), rgba(255,255,255,0.3)); }
@@ -112,9 +112,15 @@ to {transform:  rotateY(55deg ) rotateX(65deg ) rotateZ(360deg ) }
 .imgshow.db .imgshow-bg{ width:80%;}
 .imgshow.db .imgshow-bg:nth-child(2){ margin-left: 20%; margin-top: -28%;}
 
-.imgshow.db2{ width: 100%; margin-top: 14%;}
+.imgshow.db2{ width: 60%; margin: 14% auto 0; position: relative;}
+.imgshow.db2 .imgshow-bg{ position: absolute; z-index: 199; left: 0; top: 0; opacity: 1; box-sizing:  border-box; width: 100%;}
+.imgshow.db2 .imgshow-bg:nth-child(2){ left: -30%; z-index: 188;  top: 30px; width: 80%;}
+.imgshow.db2 .imgshow-bg:nth-child(3){ left: 50%;z-index: 188; top: 30px;width: 80%; }
+.imgshow.db2 .imgshow-bg:nth-child(2) img{opacity: 0.5; }
+.imgshow.db2 .imgshow-bg:nth-child(3) img{ opacity: 0.5;}
 
-.imgtxt{ position: relative; z-index: 88; margin-top: -25%;}
+.imgtxt{ position: relative; z-index: 88; margin-top: -26%; }
+.imgtxt img{transform: scale(1.18)}
 .decktxt img{width: 41%;}
 .rctxt img{width:25%;}
 .txltxt img{width:24.4%;}
