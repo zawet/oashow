@@ -15,6 +15,7 @@ function toStart(){
     var vl = new Swiper('.os-box', {
         direction: 'vertical',
         //loop: true,
+        //initialSlide :7,
         onTransitionStart: function (swiper) {
             am(swiper.activeIndex);
         },
@@ -147,7 +148,9 @@ function am(si) {
     }
     if (si == 7) {
         $(".os-box #office .swiper-slside-active .os-min").show().addClass("animated");
-        $("#" + sid + " .imgshow-bg").addClass("flipInY");
+        $("#" + sid + " .imgshow-bg").eq(0).addClass("flipInY");
+        $("#" + sid + " .imgshow-bg").eq(1).addClass("fadeInLeft").addClass("yc20");
+        $("#" + sid + " .imgshow-bg").eq(2).addClass("fadeInRight").addClass("yc20");
         $("#" + sid + " .imgtxt").addClass("flipInX").addClass("yc15");
     }
     if (si == 8) {
